@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - IPS Corazón de Arte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IPS Unidad Corazón de Arte</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Agregar Paciente</h2>
+            <form id="patientForm">
+                <input type="text" id="patientId" placeholder="ID" required>
+                <input type="text" id="patientName" placeholder="Nombre del Paciente" required>
+                <input type="number" id="patientAge" placeholder="Edad" required>
+                <input type="date" id="appointmentDate" required>
+                <textarea id="observations" placeholder="Observaciones"></textarea>
+                <input type="file" id="documents">
+                <button type="submit">Agregar Paciente</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de Pacientes</h2>
+            <table id="patientsTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Fecha de Atención</th>
+                        <th>Observaciones</th>
+                        <th>Documentos</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se llenará la lista de pacientes -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Usuario: <span id="currentUser"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
